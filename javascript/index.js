@@ -4,6 +4,6 @@ let losAngelesTimeElement = losAngelesElement.querySelector(".time");
 let losAngelesTime = moment();
 
 losAngelesDateElement.innerHtml = losAngelesTime.format("MMMM Do YYYY");
-losAngelesTimeElement.innerHtml = `${losAngelesTime.format(
-  "h:mm:ss"
-)} <small>${losAngelesTime.format("A")}</small>`;
+losAngelesTimeElement.innerHtml = losAngelesTime.format(
+  "h:mm:ss [<small>A</small>"
+);
